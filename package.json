@@ -1,0 +1,22 @@
+{
+  "name": "mailer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "mailgen": "^2.0.29",
+    "nodemailer": "^6.10.1",
+    "nodemon": "^3.1.9"
+  },
+  "description": ""
+}
