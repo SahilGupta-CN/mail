@@ -59,7 +59,7 @@ app.post('/api/contact', async (req, res) => {
         <p><strong>Last Name:</strong> ${lastName}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone:</strong> ${phone}</p>
-        <p><strong>Company:</strong> ${company || 'Not provided'}</p>
+       
         <p><strong>Message:</strong></p>
         <p>${message}</p>
       `
@@ -71,7 +71,6 @@ app.post('/api/contact', async (req, res) => {
     // Send success response
     res.status(200).json({ success: true, message: 'Message sent successfully' });
   } catch (error) {
-    console.error('Error sending email:', error);
     res.status(500).json({ success: false, message: 'Failed to send message' });
   }
 });
